@@ -1,1 +1,1 @@
-# multiple_connectivity_search_in_hetionet
+# multi_search_in_hetionet
