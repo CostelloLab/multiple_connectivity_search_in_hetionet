@@ -49,7 +49,7 @@ The notebook (1_hetionet_analysis_w_updated_GO_final.ipynb) performs a comparati
 - Statistical test results (e.g., t-tests) for DWPC and related metrics
 - Venn diagrams of gene overlaps between GO versions
 - Annotated summary tables of gene additions per GO term
-![Sample Output](output/threeway_comparison_plot_mean_adjusted_p_value.jpeg)
+![Sample Output](output/threeway_comparison_plot_mean_dwpc.jpeg)
 
 
 ## Project Conclusion
