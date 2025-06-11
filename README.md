@@ -51,6 +51,8 @@ The notebook (1_hetionet_analysis_w_updated_GO_final.ipynb) performs a comparati
 - Annotated summary tables of gene additions per GO term
 ![Sample Output](output/threeway_comparison_plot_mean_dwpc.jpeg)
 
+Fig 1: Comparision of distributions of mean DWPC when GO added new genes
+
 
 ## Project Conclusion
 
@@ -109,11 +111,16 @@ The notebook (2_multiple_connectivity_search_hetionetAPI.ipynb) implements a mod
 5. **Visualization**: Generate PyVis network graph with source/target highlighting
 
 ![Sample Output 1](output/hetionet_multiple_connec_search_down_syndrome.png)
+Fig 2: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Down Syndrome symptoms (target)
 
 
 ![Sample Output](output/hetionet_multiple_connec_search_obesity.png)
 
+Fig 3: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Down Obesity (target)
+
 ![Sample Output](output/hetionet_multiple_connec_search.png)
+
+Fig 4: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Sleep Apnea (target)
 
 
 
