@@ -49,6 +49,7 @@ The notebook (1_hetionet_analysis_w_updated_GO_final.ipynb) performs a comparati
 - Statistical test results (e.g., t-tests) for DWPC and related metrics
 - Venn diagrams of gene overlaps between GO versions
 - Annotated summary tables of gene additions per GO term
+![Sample Output](output/threeway_comparison_plot_mean_adjusted_p_value.jpeg)
 
 
 ## Project Conclusion
@@ -107,6 +108,7 @@ The notebook (2_multiple_connectivity_search_hetionetAPI.ipynb) implements a mod
    - Filter redundant or irrelevant paths
 5. **Visualization**: Generate PyVis network graph with source/target highlighting
 
+![Sample Output](output/hetionet_multiple_connec_search.png)
 
 ## Usage Notes
 
