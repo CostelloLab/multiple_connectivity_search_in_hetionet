@@ -111,12 +111,12 @@ The notebook (2_multiple_connectivity_search_hetionetAPI.ipynb) implements a mod
 5. **Visualization**: Generate PyVis network graph with source/target highlighting
 
 ![Sample Output 1](output/hetionet_multiple_connec_search_down_syndrome.png)
-Fig 2: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Down Syndrome symptoms (target)
+Fig 2: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Down Syndrome as symptoms (target)
 
 
 ![Sample Output](output/hetionet_multiple_connec_search_obesity.png)
 
-Fig 3: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Down Obesity (target)
+Fig 3: Mutiple Connectivity Search in Hetionet inbetween multiple genes (Sources) and Obesity (target)
 
 ![Sample Output](output/hetionet_multiple_connec_search.png)
 
