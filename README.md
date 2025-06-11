@@ -107,10 +107,6 @@ The notebook (2_multiple_connectivity_search_hetionetAPI.ipynb) implements a mod
    - Filter redundant or irrelevant paths
 5. **Visualization**: Generate PyVis network graph with source/target highlighting
 
-## Requirements
-
-- Python 3.8+
-- `requests`, `pandas`, `networkx`, `pyvis`, `tqdm`
 
 ## Usage Notes
 
