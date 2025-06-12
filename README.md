@@ -49,9 +49,9 @@ The notebook (1_hetionet_analysis_w_updated_GO_final.ipynb) performs a comparati
 - Statistical test results (e.g., t-tests) for DWPC and related metrics
 - Venn diagrams of gene overlaps between GO versions
 - Annotated summary tables of gene additions per GO term
-![Sample Output](output/threeway_comparison_plot_mean_dwpc.jpeg)
 
-Fig 1: Comparision of distributions of mean DWPC when GO added new genes
+![Output: DWPC Comparison](output/threeway_comparison_plot_mean_dwpc.jpeg)  
+*Fig 1: Mean DWPC across GO_2015, GO_2024, and pseudo-GO for matched terms.*
 
 
 ## Results Summary
@@ -59,8 +59,6 @@ Fig 1: Comparision of distributions of mean DWPC when GO added new genes
 - Updated GO annotations exhibited **significant increases** in mean DWPC and nonzero connectivity compared to both GO_2015 and pseudo-GO terms (p < 0.001).
 - Pseudo-GO sets showed no consistent enrichment, confirming that observed changes are not attributable to gene set size or update proportion alone.
 
-![Output: DWPC Comparison](output/threeway_comparison_plot_mean_dwpc.jpeg)  
-*Fig 1: Mean DWPC across GO_2015, GO_2024, and pseudo-GO for matched terms.*
 
 ## Conclusion
 
