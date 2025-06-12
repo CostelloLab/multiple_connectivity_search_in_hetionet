@@ -54,24 +54,17 @@ The notebook (1_hetionet_analysis_w_updated_GO_final.ipynb) performs a comparati
 Fig 1: Comparision of distributions of mean DWPC when GO added new genes
 
 
-## Project Conclusion
+## Results Summary
 
-This analysis demonstrates the utility of incorporating updated Gene Ontology (GO) annotations (2024) into Hetionet’s network-based framework for evaluating gene-function relationships.
+- Updated GO annotations exhibited **significant increases** in mean DWPC and nonzero connectivity compared to both GO_2015 and pseudo-GO terms (p < 0.001).
+- Pseudo-GO sets showed no consistent enrichment, confirming that observed changes are not attributable to gene set size or update proportion alone.
 
-### Key Findings
+![Output: DWPC Comparison](output/threeway_comparison_plot_mean_dwpc.jpeg)  
+*Fig 1: Mean DWPC across GO_2015, GO_2024, and pseudo-GO for matched terms.*
 
-- **Updated GO terms introduced new gene associations** in ~25% of genes for many Biological Process (BP) terms while retaining compatibility with Hetionet’s existing GO-gene structure.
-- **DWPC and other metapath-based statistics** (e.g., nonzero mean, p-values) exhibited **significant differences** between:
-  - Original Hetionet GO terms (2015),
-  - Updated GO terms (2024), and
-  - Pseudo-random GO terms matched by size.
-- These differences indicate that **updated GO annotations reflect meaningful biological additions**, improving the semantic and topological relevance of GO-gene connections.
-- In contrast, **randomly assigned pseudo-GO sets** failed to replicate the statistical enrichment observed in the updated GO terms, supporting the **biological specificity** of the added gene annotations.
+## Conclusion
 
-### Implications
-
-- Modest updates in curated ontologies (≤25% gene additions) can still produce **significant shifts in network-based inference**, emphasizing the importance of using up-to-date annotations in knowledge graph analysis.
-- The methodology of combining structured metapath statistics with **matched random control comparisons** offers a reproducible approach for testing annotation updates in heterogeneous networks like Hetionet.
+This study demonstrates that even modest updates in GO BP annotations (≤25% gene additions) can yield **non-trivial shifts in network connectivity metrics**, underscoring the sensitivity of Hetionet-based inference to curated annotation changes. The introduced pseudo-GO framework enables rigorous null hypothesis testing and reinforces the **biological specificity** of the updated annotations.
 
 
 # Multiple Connectivity Search with Hetionet API
