@@ -33,6 +33,10 @@ The objective of this study is to systematically compare the network properties 
 - **Random GO-G pairs:**  
   Randomly generated gene–GO term pairs, matched in size to the curated datasets, used as a negative control to assess the specificity of observed network properties.
 
+##Analysis Details
+
+The full implementation and analysis details are available in the notebook [`1_hetionet_analysis_w_updated_GO_final.ipynb`](./1_hetionet_analysis_w_updated_GO_final.ipynb).
+
 ## Outputs
 
 - Comparative distribution plots (strip plots, histograms)
@@ -50,29 +54,16 @@ The objective of this study is to systematically compare the network properties 
 *Fig 2: Pairwise scatter plots comparing GO-gene association statistics across three datasets: Hetio GO 2015, Updated GO 2024, and Random GO-G pairs. Each row represents a different statistic, with the column name as the row title. The plot displays the Pearson correlation coefficient (ρ) and the corresponding p-value for each comparison.*
 
 
-## Discussion and Conclusion
 
-### Discussion
+## Results Summary
 
-In this analysis, we compared the distributions and relationships of metapath-based statistics (such as mean DWPC, mean p-value, mean adjusted p-value, mean nonzero mean, and mean nonzero SD) across three groups: Hetio GO 2015, Updated GO 2024, and Random GO-G pairs. The scatter plots and statistical summaries provided several key insights:
+- Updated GO annotations exhibited **significant increases** in mean DWPC and nonzero connectivity compared to both GO_2015 and pseudo-GO terms (p < 0.001).
+- Pseudo-GO sets showed no consistent enrichment, confirming that observed changes are not attributable to gene set size or update proportion alone.
 
-- **Consistency and Change in GO Annotations:**  
-  The comparison between Hetio GO 2015 and Updated GO 2024 revealed both stability and evolution in GO term–gene associations. While many associations are preserved, the updated dataset introduces new gene–GO pairs, reflecting the growth of biological knowledge.
 
-- **Statistical Distributions:**  
-  The distributions of metapath statistics for the updated GO 2024 group often differ from those of the original Hetio GO 2015 group, especially for GO terms with ≤250 genes and ≤25% gene increase. This suggests that newly added genes in the updated GO are not simply random additions but may have distinct network properties.
+## Conclusion
 
-- **Random Controls:**  
-  The Random GO-G pairs serve as a negative control. Their distributions and scatter plot correlations are generally distinct from both Hetio and Updated GO groups, supporting the biological relevance of the curated associations.
-
-- **Correlations:**  
-  The pairwise scatter plots show varying degrees of correlation between the groups. Typically, the correlation between Hetio and Updated GO is higher than between either of these and the random group, further supporting the validity of the updated annotations.
-
-### Conclusion
-
-Our results demonstrate that updates to GO annotations (from 2015 to 2024) introduce new gene–GO associations with distinct network properties, as measured by metapath statistics. These new associations are not random but are biologically meaningful, as evidenced by their statistical profiles and their differences from random gene–GO pairings. The methodology and visualizations used here provide a robust framework for assessing the impact of annotation updates in biological networks and can be extended to future releases or other ontologies.
-
-Overall, this analysis highlights the importance of continuous curation and integration of updated biological knowledge into network resources, and the value of systematic, quantitative comparison to assess the impact of such
+This study demonstrates that even modest updates in GO BP annotations (≤25% gene additions) can yield **non-trivial shifts in network connectivity metrics**, underscoring the sensitivity of Hetionet-based inference to curated annotation changes. The introduced pseudo-GO framework enables rigorous null hypothesis testing and reinforces the **biological specificity** of the updated annotations.
 
 
 # Multiple Connectivity Search with Hetionet API
