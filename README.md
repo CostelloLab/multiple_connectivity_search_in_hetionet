@@ -33,6 +33,27 @@ The objective of this study is to systematically compare the network properties 
 - **Random GO-G pairs:**  
   Randomly generated gene–GO term pairs, matched in size to the curated datasets, used as a negative control to assess the specificity of observed network properties.
 
+
+### Metapath Statistics and Parameters
+
+Details of the metapath statistics and the connectivity search framework are described in the following publication:
+
+**Hetnet connectivity search provides rapid insights into how biomedical entities are related**  
+*Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, and Casey S. Greene*  
+*GigaScience*, Volume 12, 2023, giad047  
+[https://doi.org/10.1093/gigascience/giad047](https://doi.org/10.1093/gigascience/giad047)
+
+The following metapath parameters are used to quantify connectivity between biomedical entities:
+
+- **DWPC (Degree-Weighted Path Count)**: Penalizes high-degree nodes to emphasize specific paths.
+- **P-value**: Empirical significance based on permutation tests.
+- **Adjusted P-value**: FDR-corrected p-value to account for multiple testing.
+- **Non-zero DWPC mean**: Mean DWPC across permutations where paths were non-zero.
+- **Non-zero DWPC standard deviation (σ)**: Standard deviation across non-zero permutations, useful for z-score normalization.
+
+These parameters help identify biologically meaningful connections with statistical rigor.
+
+
 ##Analysis Details
 
 The full implementation and analysis details are available in the notebook [`1_hetionet_analysis_w_updated_GO_final.ipynb`](./1_hetionet_analysis_w_updated_GO_final.ipynb).
@@ -43,6 +64,7 @@ The full implementation and analysis details are available in the notebook [`1_h
 - Statistical test results (e.g., t-tests) for DWPC and related metrics
 - Venn diagrams of gene overlaps between GO versions
 - Annotated summary tables of gene additions per GO term
+
 
 ![Output: DWPC Comparison](output/threeway_comparison_plot_mean_dwpc.jpeg)  
 *Fig 1: Mean DWPC across GO_2015, GO_2024, and pseudo-GO for matched terms.*
