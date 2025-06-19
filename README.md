@@ -43,7 +43,7 @@ Details of the metapath statistics and the connectivity search framework are des
 *GigaScience*, Volume 12, 2023, giad047  
 [https://doi.org/10.1093/gigascience/giad047](https://doi.org/10.1093/gigascience/giad047)
 
-The following metapath parameters are used to quantify connectivity between biomedical entities:
+The following metapath parameters are used to quantify connectivity between source and target node:
 
 - **DWPC (Degree-Weighted Path Count)**: Penalizes high-degree nodes to emphasize specific paths.
 - **P-value**: Empirical significance based on permutation tests.
@@ -54,7 +54,7 @@ The following metapath parameters are used to quantify connectivity between biom
 These parameters help identify biologically meaningful connections with statistical rigor.
 
 
-##Analysis Details
+## Analysis Details
 
 The full implementation and analysis details are available in the notebook [`1_hetionet_analysis_w_updated_GO_final.ipynb`](./1_hetionet_analysis_w_updated_GO_final.ipynb).
 
